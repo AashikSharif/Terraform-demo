@@ -1,0 +1,12 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# Exclude if it may contain secrets or personal environment values
+terraform.tfvars
+*.auto.tfvars
+
+# Never commit provider lock backup files
+.terraform.tfstate.lock.info

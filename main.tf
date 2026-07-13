@@ -106,6 +106,7 @@ resource "azurerm_cognitive_deployment" "chat_model" {
   }
 }
 
+
 #resource "azurerm_role_assignment" "web_app_openai_user" {
 #  scope                = azurerm_cognitive_account.openai.id
 #  role_definition_name = "Cognitive Services OpenAI User"

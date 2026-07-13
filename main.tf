@@ -1,4 +1,5 @@
 terraform {
+  backend "azurerm" {}
   required_version = ">= 1.6.0"
 
   required_providers {
@@ -105,8 +106,8 @@ resource "azurerm_cognitive_deployment" "chat_model" {
   }
 }
 
-resource "azurerm_role_assignment" "web_app_openai_user" {
-  scope                = azurerm_cognitive_account.openai.id
-  role_definition_name = "Cognitive Services OpenAI User"
-  principal_id         = azurerm_linux_web_app.web_app.identity[0].principal_id
-}
+#resource "azurerm_role_assignment" "web_app_openai_user" {
+#  scope                = azurerm_cognitive_account.openai.id
+#  role_definition_name = "Cognitive Services OpenAI User"
+#  principal_id         = azurerm_linux_web_app.web_app.identity[0].principal_id
+#}

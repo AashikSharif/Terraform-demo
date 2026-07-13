@@ -94,11 +94,11 @@ resource "azurerm_cognitive_deployment" "chat_model" {
   name                 = "chat-model"
   cognitive_account_id = azurerm_cognitive_account.openai.id
 
-model {
-    format = "OpenAI"
+  model {
+    format  = "OpenAI"
     name    = var.openai_model_name
     version = var.openai_model_version
-}
+  }
   sku {
     name     = var.openai_deployment_sku
     capacity = var.openai_capacity

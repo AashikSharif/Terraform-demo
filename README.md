@@ -1,4 +1,7 @@
-# Terraform → GitHub Actions → Azure (Hands-on Guide)
+# Terraform → GitHub Actions → Azure (Hands-on Guide) 
+
+
+- dummy change
 
 This repo contains a small Terraform configuration (`main.tf`, `variables.tf`, `outputs.tf`).
 It works when you run it **locally**. This guide walks you through making it run in
